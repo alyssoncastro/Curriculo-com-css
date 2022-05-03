@@ -1,0 +1,77 @@
+body {
+    background: black;
+    font: normal 10px;
+    background-image: url(space.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.461);
+    color: white;
+}
+@keyframes animacao { 
+    from {background-color: transparent;}
+    to {background-color: rgba(0, 0, 0, 0.461);}
+}
+.margem {
+    margin: 0 auto;
+    width: 50%;
+    animation-name: animacao;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 5 ;
+}
+
+h1 { font: normal 100px;
+    font-family: Gótico;
+    text-align: center;
+}
+
+h2 {
+    font: normal 25px new york times;
+    text-align: center;
+    
+}
+
+h3 {
+    font: normal 20px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Gótico;
+    src: url("OldLondon.ttf");
+}
+@keyframes animacao2 {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+h4 {
+    color: black;
+    font: normal 10px;
+    font-family: Gótico;
+    text-align: center;
+   padding: 0px;
+   animation-name: animacao2;
+   animation-duration: 2s;
+   animation-iteration-count:infinite;
+}
+
+h5 {
+    font: normal 10px;
+    text-align: center;
+}
+
+p {
+    font: normal 20px new york times;
+    text-align: center;
+}
+ 
+img {
+    margin:auto;
+    display: block;
+}
+.fotoAlysson { border-radius: 100px;}
