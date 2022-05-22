@@ -5,6 +5,8 @@
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="estilo.curriculo.css">
     <script> alert ("BEM-VINDO AO MEU CURRÍCULO! PARA ACESSÁ-LO, CLIQUE EM 'OK'")</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -41,5 +43,15 @@
         ● INFORMÁTICA BÁSICA (completo).<br>
         INSTITUIÇÃO: IEMA</p>
 <hr>
+<div>
+        <button id="btn">mudar de cor</button>
+</div>
+<script>
+        $('#btn').on("click", botao)
+
+        function botao() {
+                $('h3').css({'color':'yellow'});
+        }
+</script>
 </body>
 </html>
