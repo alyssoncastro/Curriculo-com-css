@@ -14,7 +14,7 @@
 <div class="margem">
 <hr>
 <h4>Currículo</h4>
-    <h2><strong>ALYSSON CARLOS DE CASTRO CORDEIRO</strong></h2> 
+    <h2 id="nome"><strong>ALYSSON CARLOS DE CASTRO CORDEIRO</strong></h2> 
     <img class="fotoAlysson" src="alysson1.jpeg"alt="alysson"width="100">
     <p>IDADE: 22 ANOS<br>
         ENDEREÇO: RUA M.M.D.C. N°80<br>
@@ -46,12 +46,27 @@
 <div>
         <button id="btn">mudar de cor</button>
 </div>
+
 <script>
         $('#btn').on("click", botao)
 
         function botao() {
                 $('h3').css({'color':'yellow'});
         }
+
+        function getNome() {
+                var url = "/nome";
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("get", url, false);
+                xhttp.send();
+
+                var data = JSON.parse(xhttp.responseText);
+                console.log(data.nome);
+
+                document.getElementById("nome").innerHTML = `<strong>${data.nome}</strong>`
+        }
+        getNome();
 </script>
 </body>
 </html>
